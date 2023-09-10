@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const app = express();
 const cors = require("cors");
+const { searchData } = require('./data');
 app.use(cors({ origin: "*" }));
 
 app.get('/', function (req, res) {

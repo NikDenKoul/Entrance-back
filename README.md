@@ -1,2 +1,3 @@
-Установить библиотеки:
-npm install express @types/express cors
+## Установить библиотеки:
+
+### npm install express @types/express cors lodash
