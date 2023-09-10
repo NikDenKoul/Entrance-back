@@ -1,4 +1,4 @@
-const { find } = require('lodash');
+const { filter } = require('lodash');
 
 interface IUser {
     readonly email: string;
@@ -9,6 +9,6 @@ const data : IUser[] = require('../data/data.json');
 
 module.exports = {
     searchData: function (email: string, number: number|null) {
-        return find(data, item => item.email === email && (number == null || item.number === number));
+        return filter(data, item => item.email === email && (number == null || item.number === number));
     }
 };
